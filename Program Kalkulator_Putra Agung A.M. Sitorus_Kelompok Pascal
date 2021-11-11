@@ -1,0 +1,60 @@
+#include <iostream>
+#include <cmath>
+#include <string>
+using namespace std;
+
+int main ()
+{ 
+    int num1, num2, pil;
+    float hasil;
+    
+    cout<<"Tugas Pemrograman TLS 2021";
+    cout<<"\nPutra Agung A.M. Sitorus - 21/474928/TK/52423";
+    cout<<"\n\nKalkulator Sederhana";
+    cout<<"\n----------------------";
+    
+    cout<<"\n\n1. Penjumlahan";
+    cout<<"\n2. Pengurangan";
+    cout<<"\n3. Perkalian";
+    cout<<"\n4. Pembagian";
+    cout<<"\n5. Sisa bagi/Modulus";
+    cout<<"\n\nMasukkan jenis operasi : ";
+    cin>>(pil);
+    
+    cout<<"\nMasukkan bilangan pertama : ";
+    cin>>(num1);
+    cout<<"\nMasukkan bilangan kedua : ";
+    cin>>(num2);
+    
+    switch(pil)
+    {
+        case 1: 
+        hasil=num1+num2;
+        break;
+        
+        case 2: 
+        hasil=num1-num2;
+        break;
+        
+        case 3: 
+        hasil=num1*num2;
+        break;
+        
+        case 4: 
+        hasil=num1/num2;
+        break;
+        
+        case 5:
+        hasil=num1%num2;
+        break;
+        
+        default: 
+        cout<<"Input masukan salah.";
+        break;
+    }
+    
+    cout<<"\n\nMaka hasil operasinya adalah : "<<hasil;
+    cout<<"\n----------------------------------";
+    
+    return 0;
+}   
